@@ -8,14 +8,14 @@
 </head>
 <body>
     
-<form method="post">
+<form method="get">
        <p>FORMULARIO </p>
 
             
 <div>
-<label for="dia"> Temperaturas:</label>
+<label for="numero_elementos"> Nº de Temperaturas:</label>
 
- <input type="number" name="numero_elementos" min="1" max="100" value="1"/>
+ <input type="number" name="numero_elementos" min="1" max="100" value="10"/>
    
  <br/>
 </div>
@@ -33,23 +33,53 @@ echo "<h1>$numero_elementos</h1>";
 // Inicializo el array de temperaturas
 $temperatura = array();
 
-for ($i = 0; $i < $numero_elementos; $i++) {
+$i = 0;
+while ($i < $numero_elementos) {
 
     $temperatura[$i] = rand(1, 30);
+    $i++;
 
 }
 
 // Calculo de la media
 $suma = 0;
-for ($i = 0; $i < $numero_elementos; $i++) {
+$i = 0; 
+while ($i < $numero_elementos) {
 
-    $suma = $uma + $temperatura[$i];
+    $suma = $suma + $temperatura[$i];
+    $i++;
 
 }
 //Mas eficiente fuera del bucle
 $media = $suma / $numero_elementos;
 
 echo "<h4>La media de la temperatura es: $media </h4>";
+// Calculo el maximo
+$maximo = $temperatura[0];
+$i = 1; 
+while ($i < $numero_elementos){
+
+    if ($temperatura[$i] > $maximo)
+    {
+        $maximo = $temperatura[$i];
+    }
+    $i++;
+
+}
+    echo "<h4>La maxima temperatura es: $maximo </h4>";
+// Calculo el minimo
+$minimo = $temperatura[0];
+$i = 1;
+while ($i < $numero_elementos){
+
+    if ($temperatura[$i] < $minimo)
+    {
+        $minimo = $temperatura[$i];
+    }
+    $i++;
+}
+
+echo "<h4>La minima temperatura es: $minimo </h4>";
 
 echo "<pre>";
 print_r($temperatura);

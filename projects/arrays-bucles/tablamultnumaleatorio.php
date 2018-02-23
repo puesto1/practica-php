@@ -15,7 +15,7 @@ $title = "Tabla de multiplicar con el numero aleatorio $numero";
 <html>
 <head>
 <meta charset="utf-8"/>
-<title> Tabla del ocho</title>
+<title> Tabla del numero aleatorio</title>
 </head>
 <body>
 

@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+
+
+ <!DOCTYPE html>
 
 <html>
 
 <head>
 
-<title>Formulario sencillo con Post </title>
+<title>Formulario sencillo</title>
 
 <meta charset="utf-8">
 
@@ -12,7 +14,7 @@
 
        <body>
 
-              <form name="formulariosencillo"method="post">
+              <form name="formulariosencillo"method="get">
        <p>FORMULARIO </p>
 
              <br/>
@@ -35,12 +37,12 @@
  </form>
 
 <?php
-if (!empty($_POST["nombre"]) && !empty($_POST["apellidos"]))
+if (!empty($_GET["nombre"]) && !empty($_GET["apellidos"]))
 {
 
-      echo "Nombre: ".$_POST["nombre"];
+      echo "Nombre: ".$_GET["nombre"];
       echo "<br>";
-      echo "Apellidos: ".$_POST["apellidos"];
+      echo "Apellidos: ".$_GET["apellidos"];
 }
 ?>
 </body>

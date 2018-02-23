@@ -8,12 +8,12 @@
 </head>
 <body>
     
-<form method="post">
+<form method="get">
        <p>FORMULARIO </p>
 
             
 <div>
-<label for="dia"> Temperaturas:</label>
+<label for="numero_elementos"> Nº de Temperaturas:</label>
 
  <input type="number" name="numero_elementos" min="1" max="100" value="1"/>
    
@@ -41,15 +41,37 @@ for ($i = 0; $i < $numero_elementos; $i++) {
 
 // Calculo de la media
 $suma = 0;
-for ($i = 0; $i < $numero_elementos; $i++) {
 
-    $suma = $uma + $temperatura[$i];
+foreach($temperatura as $valor){
+    $suma = $suma + $valor;
 
-}
 //Mas eficiente fuera del bucle
 $media = $suma / $numero_elementos;
-
+}
 echo "<h4>La media de la temperatura es: $media </h4>";
+// Calculo el maximo
+$maximo = $temperatura[0];
+foreach($temperatura as $valor){
+
+    if ($temperatura > $valor)
+    {
+        $maximo = $valor[$i];
+    }
+
+    }
+
+// Calculo el minimo
+$minimo = $temperatura[0];
+foreach($temperatura as $valor){
+
+    if ($temperatura < $valor)
+    {
+        $minimo = $temperatura;
+    }
+
+    }
+
+
 
 echo "<pre>";
 print_r($temperatura);

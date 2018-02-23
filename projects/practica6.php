@@ -1,12 +1,11 @@
+
+
+for($i = 1; $i <= 10; $i++){
+
+
 <?php
-$numero = rand(1, 10);
 
-?>
-
-<?php
-$title = "Tabla de multiplicar con el numero aleatorio $numero";
-
-//echo "$numero";
+$title = "Tabla de multiplicar del numero $i";
 
 ?>
 
@@ -38,3 +37,5 @@ echo "</table>";
 ?>
 </body>
 </html>
+
+}
