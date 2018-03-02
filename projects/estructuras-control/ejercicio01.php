@@ -13,11 +13,11 @@ $moneda = rand(0, 1);
 
     if ($moneda == 0 ){
 
-    echo "<img src=\"images/cara euro.jpg\" />";
+    echo "<img src=\"images/euro_cara.jpg\" />";
 
         }else {
 
-    echo "<img src=\"images/cruz euro.jpg\" />";
+    echo "<img src=\"images/euro_cruz.jpg\" />";
     }
 ?>
 </body>

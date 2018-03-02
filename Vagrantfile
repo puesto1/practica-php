@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
     #app.vm.network "public_network"
     app.vm.network "private_network", ip: "192.168.33.10"
     app.vm.provision "shell", path: "provision/provision-for-nginx.sh"
+    #app.vm.provision "shell", path: "provision/provision-for-mysql.sh"
   end
 
 end
