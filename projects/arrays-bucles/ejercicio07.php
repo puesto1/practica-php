@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,3 +95,15 @@ echo "</pre>";
 ?>
 </body>
 </html>
+=======
+<?php
+$frutas =array("limon", "naranja", "banana", "albaricoque");
+
+sort($frutas);
+
+for ($i = 0; $i < count($frutas); $i++) {
+    echo "<h1>$frutas[$i]</h1>";
+
+}
+?>
+>>>>>>> 6ecdf65a2da2be13a8c0cb3dcfaad18a75d95ca7

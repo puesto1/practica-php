@@ -65,9 +65,15 @@
                 echo "<img src=\"".$images[$tipo_moneda]["cara"]."\">";
             }else {
                 echo "<img src=\"".$images[$tipo_moneda]["cruz"]."\">";
+<<<<<<< HEAD
             }
 
         }
+=======
+        }
+
+}
+>>>>>>> 6ecdf65a2da2be13a8c0cb3dcfaad18a75d95ca7
 ?>
 
 </body>

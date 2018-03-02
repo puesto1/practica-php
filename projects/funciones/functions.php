@@ -5,11 +5,22 @@
 function inicializar_array($numero_elementos, $min, $max) {
     $lista = array();
     
+<<<<<<< HEAD
      for($i = 0; $i < $numero_elementos; $i++) {
        
        $lista[$i] = rand($min, $max);
        
      }
+=======
+    
+
+    for($i = 0; $i < $numero_elementos; $i++) {
+       
+       $lista[$i] = rand($min, $max);
+       
+        
+            }
+>>>>>>> 6ecdf65a2da2be13a8c0cb3dcfaad18a75d95ca7
 
     return $lista;
    
@@ -30,6 +41,7 @@ function calcular_media($lista) {
        
        $suma = $suma + $lista[$i];
        
+<<<<<<< HEAD
     }
         $media = $suma / count($lista);
 
@@ -59,10 +71,18 @@ function calcular_maximo($lista) {
     }
 
     return $maximo;
+=======
+        
+            }
+        $media = $suma / count($lista);
+
+    return $media
+>>>>>>> 6ecdf65a2da2be13a8c0cb3dcfaad18a75d95ca7
    
 
 
 }
+<<<<<<< HEAD
 //Definicion de la funcion
 
 // Calculo el minimo
@@ -99,4 +119,6 @@ function imprime_array() {
     return $datos;
 }
 
+=======
+>>>>>>> 6ecdf65a2da2be13a8c0cb3dcfaad18a75d95ca7
 ?>
